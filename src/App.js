@@ -1,11 +1,11 @@
 import './App.css';
-import Players from './Component/Players/Players';
+import PlayerSelection from './Component/PlayerSelection/PlayerSelection';
 
 function App() {
   return (
     <div className="App">
-      <header><h1>My Dream Club 'F.C.D' Player Selection</h1></header>
-      <Players></Players>
+      <header><h1 style={{margin:'20px'}}>Player Selection for my Club - <span style={{backgroundColor:'lightblue', borderRadius:'20px', padding:'5px'}}>'Dipraj's Akadhosh'</span></h1></header>
+      <PlayerSelection></PlayerSelection>
     </div>
   );
 }

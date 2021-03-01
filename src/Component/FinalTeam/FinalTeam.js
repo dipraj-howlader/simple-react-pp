@@ -3,12 +3,15 @@ import './FinalTeam.css'
 
 const FinalTeam = (props) => {
     const finalPlayers = props.finalPlayers;
-    console.log(finalPlayers);
 
-    let selectedPlayerSalary = finalPlayers.reduce((sum, footballer) => sum + Number(footballer.salary)
+    const selectedPlayerSalary = finalPlayers.reduce((sum, footballer) => sum + Number(footballer.salary)
     ,0)
-    const selectedPlayerName = finalPlayers.reduce((sum , footballerName) => sum + footballerName.name + ' '
-    ,[])
+
+    // let individulSalary = finalPlayers.map((salary) =>  Number(salary.salary), 0);
+    
+    
+    const selectedPlayerName = finalPlayers.reduce((sum , footballerName , salary) => sum + footballerName.name + '($' + footballerName.salary + '),'
+    ,[]);
     
 
     return (
@@ -18,11 +21,11 @@ const FinalTeam = (props) => {
             <br/>
             <hr></hr>
             <br/>
-            <h4>Selected Player : {finalPlayers.length}</h4>
+            <h4>Total Selected Player : {finalPlayers.length}</h4>
             <br/>
             <h6>Selected Players Name : {selectedPlayerName}</h6>
             <br/>
-            <br/>
+            <hr></hr>
             <h6>Total Salary : ${selectedPlayerSalary}</h6>
 
             

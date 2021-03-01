@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import FinalTeam from '../FinalTeam/FinalTeam';
 import Players from '../Players/Players';
 import './PlayerSelection.css'
-import fakeData from '../../fakeData/data.json'
+import fakeData from '../../fakeData/data.json';
+import {Row , Col, Container} from 'react-bootstrap';
 
 const PlayerSelection = () => {
 
@@ -25,18 +26,26 @@ const PlayerSelection = () => {
 
 
     return (
-        <div style={{display:'flex'}} >
-            <div className='player-style'>
+        <div>
+            <Row>
+    <Col sm={8}><div className='player-style'>
                 {
                     players.map(player  => <Players handleAddPlayer={handleAddPlayer} player={player} key={player.id}></Players>)
                 }
                 
-            </div>
-
-            <div>
+            </div></Col>
+    <Col sm={4}><div>
                 <FinalTeam finalPlayers={finalPlayers}></FinalTeam>
-            </div>
+            </div></Col>
+  </Row>
+
+
+
+
             
+
+            
+           
         </div>
     );
 };

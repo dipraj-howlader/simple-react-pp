@@ -1,5 +1,4 @@
 .player-style{
     display: grid;
-    width: 80%;
     grid-template-columns: repeat(3 , 1fr);
 }

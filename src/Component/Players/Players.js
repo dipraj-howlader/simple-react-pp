@@ -8,7 +8,7 @@ import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Players = (props) => {
     const handleAddPlayer =props.handleAddPlayer;
-    const {name , salary, photo, id, email} = props.player;
+    const {name , salary, photo, email} = props.player;
     return (
         <div className='players'>
             <img src={photo} alt=""/>

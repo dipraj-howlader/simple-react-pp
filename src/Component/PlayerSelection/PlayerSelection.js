@@ -3,7 +3,7 @@ import FinalTeam from '../FinalTeam/FinalTeam';
 import Players from '../Players/Players';
 import './PlayerSelection.css'
 import fakeData from '../../fakeData/data.json';
-import {Row , Col, Container} from 'react-bootstrap';
+import {Row , Col } from 'react-bootstrap';
 
 const PlayerSelection = () => {
 

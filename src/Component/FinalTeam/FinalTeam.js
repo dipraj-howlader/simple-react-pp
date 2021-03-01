@@ -21,9 +21,9 @@ const FinalTeam = (props) => {
             <br/>
             <hr></hr>
             <br/>
-            <h4>Total Selected Player : {finalPlayers.length}</h4>
+            <h4>Total Selected Player :{finalPlayers.length}</h4>
             <br/>
-            <h6>Selected Players Name : {selectedPlayerName}</h6>
+            <h6>Selected Players Name : <span>{selectedPlayerName}</span></h6>
             <br/>
             <hr></hr>
             <h6>Total Salary : ${selectedPlayerSalary}</h6>

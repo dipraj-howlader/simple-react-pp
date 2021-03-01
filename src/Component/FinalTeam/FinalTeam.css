@@ -11,3 +11,7 @@
 .final-team h6{
     word-wrap:break-word;
 }
+.final-team h6 span{
+    color:rgb(38, 84, 129);
+    
+}

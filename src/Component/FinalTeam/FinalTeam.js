@@ -1,8 +1,9 @@
 import React from 'react';
+import './FinalTeam.css'
 
 const FinalTeam = () => {
     return (
-        <div>
+        <div className='finalTeam'>
             <h1>Dan pase thakbe</h1>
         </div>
     );

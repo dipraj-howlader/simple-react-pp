@@ -16,19 +16,25 @@ const PlayerSelection = () => {
     }, [] 
     )
 
+    const [finalPlayers, setFinalPlayers] = useState([])
+
+    const handleAddPlayer = (player) =>{
+        const newPlayer = [...finalPlayers, player];
+        setFinalPlayers(newPlayer);
+    }
 
 
     return (
         <div style={{display:'flex'}} >
             <div className='player-style'>
                 {
-                    players.map(player  => <Players player={player}></Players>)
+                    players.map(player  => <Players handleAddPlayer={handleAddPlayer} player={player} key={player.id}></Players>)
                 }
                 
             </div>
 
             <div>
-                <FinalTeam></FinalTeam>
+                <FinalTeam finalPlayers={finalPlayers}></FinalTeam>
             </div>
             
         </div>
